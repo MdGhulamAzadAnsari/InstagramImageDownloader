@@ -15,7 +15,7 @@ class Instagram:
 
     def find_img(self, hashtag):
         bot = self.bot
-        bot.get('https://www.instagram.com/iammdusmanansari')
+        bot.get(hashtag)
         time.sleep(4)
         for _ in range(1,2):
             bot.execute_script('window.scrollTo(0, document.body.scrollHeight)')
@@ -34,5 +34,5 @@ class Instagram:
                     time.sleep(2)
 
 ed = Instagram()
-ed.find_img('mdusmanansari')
+ed.find_img(enter instagram url profile or hashtag)
 print("Images Successful Downloaded.")
